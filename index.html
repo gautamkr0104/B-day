@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Pihu! 💖</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="confetti-container"></div>
+    
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-btn" id="musicBtn">
+            <span class="music-icon">🎵</span>
+            <span class="music-text">Play Music</span>
+        </button>
+    </div>
+
+    <!-- Step 1: Hero Section -->
+    <section class="hero step-section" id="step1">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Happy Birthday</span>
+                <span class="name-title">Pihu</span>
+                <span class="title-line">! 💖</span>
+            </h1>
+            <p class="hero-subtitle">To my amazing best friend</p>
+            <div class="floating-hearts">
+                <span class="heart">💕</span>
+                <span class="heart">💗</span>
+                <span class="heart">💖</span>
+                <span class="heart">💝</span>
+                <span class="heart">💕</span>
+            </div>
+            <button class="cta-button" id="nextBtn">
+                <span>Begin Your Journey</span>
+                <span class="arrow">→</span>
+            </button>
+        </div>
+        <div class="hero-decoration">
+            <div class="balloon balloon-1">🎈</div>
+            <div class="balloon balloon-2">🎈</div>
+            <div class="balloon balloon-3">🎈</div>
+            <div class="balloon balloon-4">🎈</div>
+            <div class="balloon balloon-5">🎈</div>
+        </div>
+    </section>
+
+    <!-- Step 2: Message Section -->
+    <section class="message-section step-section hidden" id="step2">
+        <div class="message-card">
+            <h2 class="section-title">A Special Message For You</h2>
+            <p class="message-text">
+                Dear Pihu, on your special day, I want you to know how incredibly grateful I am to have you as my best friend. 
+                Your kindness, your laughter, and your beautiful soul make every day brighter. 
+                May this birthday bring you endless joy, love, and all the happiness you deserve!
+            </p>
+            <p class="message-signature">With love, your best friend 💝</p>
+            <button class="cta-button" id="nextBtn2">
+                <span>Continue</span>
+                <span class="arrow">→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Step 3: Interactive Wishes Section -->
+    <section class="wishes-section step-section hidden" id="step3">
+        <h2 class="section-title">Make a Wish! ✨</h2>
+        <p class="section-subtitle">Click on each card to make your special wishes</p>
+        <div class="wishes-container">
+            <div class="wish-card" onclick="makeWish(this)">
+                <span class="wish-icon">🌟</span>
+                <p class="wish-text">Click to make a wish!</p>
+            </div>
+            <div class="wish-card" onclick="makeWish(this)">
+                <span class="wish-icon">🎂</span>
+                <p class="wish-text">Blow the candles!</p>
+            </div>
+            <div class="wish-card" onclick="makeWish(this)">
+                <span class="wish-icon">🎁</span>
+                <p class="wish-text">Open your gift!</p>
+            </div>
+        </div>
+        <button class="cta-button" id="nextBtn3" style="margin-top: 40px;">
+            <span>See Your Photos</span>
+            <span class="arrow">→</span>
+        </button>
+    </section>
+
+    <!-- Step 4: Photo Gallery Section -->
+    <section class="gallery-section step-section hidden" id="step4">
+        <h2 class="section-title">Beautiful Memories</h2>
+        <p class="section-subtitle">Our precious moments together</p>
+        
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Images will be loaded dynamically -->
+        </div>
+        
+        <div class="gallery-modal" id="galleryModal">
+            <button class="modal-close" id="modalClose">×</button>
+            <button class="modal-nav modal-prev" id="modalPrev">‹</button>
+            <img class="modal-image" id="modalImage" src="" alt="Gallery image">
+            <button class="modal-nav modal-next" id="modalNext">›</button>
+        </div>
+    </section>
+
+    <!-- Interactive Wishes Section -->
+    <section class="wishes-section">
+        <h2 class="section-title">Make a Wish! ✨</h2>
+        <div class="wishes-container">
+            <div class="wish-card" onclick="makeWish(this)">
+                <span class="wish-icon">🌟</span>
+                <p class="wish-text">Click to make a wish!</p>
+            </div>
+            <div class="wish-card" onclick="makeWish(this)">
+                <span class="wish-icon">🎂</span>
+                <p class="wish-text">Blow the candles!</p>
+            </div>
+            <div class="wish-card" onclick="makeWish(this)">
+                <span class="wish-icon">🎁</span>
+                <p class="wish-text">Open your gift!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 💖 for Pihu's Birthday</p>
+        <p class="footer-heart">© 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
